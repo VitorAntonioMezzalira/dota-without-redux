@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="interface">
+
+        <header class="header">
+
+            <div class="menu-title">
+                <div class="menu-icon" onclick="openMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="../home_page/index.html"><h1>Dota</h1></a>
+            </div>
+
+        </header>
+
+        <main class="main">
+            <div class="hero-page">
+                <div class="hero-info">
+                    <h2>Abaddon</h2>
+                    <img src="../images/abaddon.png" alt="abaddon">
+                    <div class="info">
+                        <div class="hero-rating">
+                            <h3>Rating: 4.5</h3>
+                            <h4>Number Reviews (54)</h4>
+                        </div>
+                        <div class="hero-favorite">
+                            &#10084;
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="hero-rate">
+                    <div class="rate">
+                        <h3>Rate</h3>
+                        <input class="input-rate" type="range" min="0" max="50">
+                        <div class="info-rate">                    
+                            <h4 class="info-input-rate">2.5</h4>
+                            <button>Enviar</button>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            All rights reserved
+        </footer>
+
+        <aside class="sidebar">
+            <h3>Characters Attributes Types</h3>
+            <button class="close-sidebar" onclick="closeMenu()" >X</button>
+            <ul>
+                <a href="./index.html"><li>Strenght</li></a>
+                <a href="./index.html"><li>Agillity</li></a>
+                <a href="./index.html"><li>Intelligence</li></a>
+            </ul>
+        </aside>
+
+        </div>
+    <script>
+        function  openMenu() { document.querySelector('.sidebar').classList.add('open') };
+        function closeMenu() { document.querySelector('.sidebar').classList.remove('open') };
+        function showRate() {
+            const rateValue = (rate.value / 10).toFixed(1);
+            rateInfo.innerHTML = rateValue;
+        }
+
+        const rate = document.querySelector('.input-rate');
+        const rateInfo = document.querySelector('.info-input-rate');
+
+        rate.addEventListener('input', showRate);
+
+    </script>
+</body>
+</html>

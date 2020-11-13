@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="interface">
+
+        <header class="header">
+
+            <div class="menu-title">
+                <div class="menu-icon" onclick="openMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="./index.html"><h1>Dota</h1></a>
+            </div>
+
+        </header>
+        <main class="main">
+            <div class="characters">
+
+                <div class="character">
+                    <a href="../hero_page/index.html">
+                        <img src="../images/abaddon.png" alt="Abaddon">
+                        <div class="character-name" >Abaddon</div>
+                    </a>
+                </div>
+
+                <div class="character">
+                    <img src="../images/alchemist.png" alt="Alchemist">
+                    <div class="character-name" >Alchemist</div>
+                </div>
+
+                <div class="character">
+                    <img src="../images/axe.png" alt="Axe">
+                    <div class="character-name" >Axe</div>
+                </div>
+
+                <div class="character">
+                    <img src="../images/beastmaster.png" alt="beastmaster">
+                    <div class="character-name" >Beastmaster</div>
+                </div>
+
+                <div class="character">
+                    <img src="../images/brewmaster.png" alt="brewmaster">
+                    <div class="character-name" >Brewmaster</div>
+                </div>
+
+                <div class="character">
+                    <img src="../images/bristleback.png" alt="bristleback">
+                    <div class="character-name" >Bristleback</div>
+                </div>
+
+                <div class="character">
+                    <img src="../images/centaur_warrunner.png" alt="centaur warrunner">
+                    <div class="character-name" >Centaur Warrunner</div>
+                </div>
+
+                <div class="character">
+                    <img src="../images/chaos_knight.png" alt="chaos knight">
+                    <div class="character-name" >Chaos Knight</div>
+                </div>
+
+                <div class="character">
+                    <img src="../images/clockwerk.png" alt="clockwerk">
+                    <div class="character-name" >Clockwerk</div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+            All rights reserved
+        </footer>
+        <aside class="sidebar">
+            <h3>Characters Attributes Types</h3>
+            <button class="close-sidebar" onclick="closeMenu()" >X</button>
+            <ul>
+                <a href="./index.html"><li>Strenght</li></a>
+                <a href="./index.html"><li>Agillity</li></a>
+                <a href="./index.html"><li>Intelligence</li></a>
+            </ul>
+        </aside>
+    </div>
+    <script>
+
+        function openMenu() {
+            document.querySelector('.sidebar').classList.add('open');
+        }
+
+        function closeMenu() {
+            document.querySelector('.sidebar').classList.remove('open');
+        }
+
+    </script>
+</body>
+</html>

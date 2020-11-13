@@ -34,8 +34,19 @@ html {
     display: flex;
     align-items: center;
 }
+.menu-title a{
+    font-size: 4.4rem;
+    color: #222222;
+    text-decoration: none;
+}
+.menu-title a:hover{
+    color: #ffffff;
+}
 .menu-icon{
     padding: 6px
+}
+.menu-icon:hover div{
+    background-color: #ffffff;
 }
 .menu-title{
     font-size: 3rem;
@@ -43,7 +54,7 @@ html {
 .menu-icon div{
     width: 2.4rem;
     height: .3rem;
-    background-color: black;
+    background-color: #222222;
     margin: .5rem .4rem .5rem .4rem;
 }
 
@@ -64,6 +75,7 @@ html {
 }
 .sidebar h3{
     font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 .sidebar button{
     font-size: 1rem;
@@ -72,6 +84,21 @@ html {
     position: absolute;
     top: 0;
     right: 0;
+}
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar ul a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.sidebar ul a li{
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+.sidebar ul a li:hover{
+    background-color: #000000;
+
 }
 
 /* main */
@@ -101,8 +128,8 @@ html {
 /* character */
 .character{
     display: flex;
-
     position: relative;
+    cursor: pointer;
 }
 .character .character-name{
     display: flex;
@@ -112,7 +139,12 @@ html {
     width: 15rem;
     bottom: 0;
 
-    text-shadow: 0 0 .4rem #000000;
     color: #ffffff;
+    text-shadow: 0 0 .4rem #000000;
+    font-size: 1.6rem;
+}
+.character:hover .character-name{
+    color:#000000;
+    text-shadow: 0 0 .4rem #ffffff;
     font-size: 2rem;
 }
