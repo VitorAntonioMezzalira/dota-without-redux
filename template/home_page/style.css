@@ -26,6 +26,8 @@ html {
 /* header */
 .header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     background-color: #808080;
     grid-area: header;
@@ -57,7 +59,20 @@ html {
     background-color: #222222;
     margin: .5rem .4rem .5rem .4rem;
 }
-
+.account {
+    display: flex;
+    align-items: center;
+}
+.account a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #222222;
+    padding: 1rem 2rem 1rem 0;
+    font-weight: bold;
+}
+.account a:hover{
+    color: #ffffff;
+}
 /* sidebar */
 .sidebar{
     position: fixed;

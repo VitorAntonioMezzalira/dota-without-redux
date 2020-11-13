@@ -20,6 +20,11 @@
                 <a href="../home_page/index.html"><h1>Dota</h1></a>
             </div>
 
+            <div class="account">
+                <a href="./index.html">Sign Up</a>
+                <a href="./index.html">Log In</a>
+            </div>
+
         </header>
 
         <main class="main">
@@ -79,6 +84,15 @@
         const rateInfo = document.querySelector('.info-input-rate');
 
         rate.addEventListener('input', showRate);
+
+        async function demo() {
+            try {
+                const data = await fetch('http://localhost:5000/api/characters')
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        demo()
 
     </script>
 </body>

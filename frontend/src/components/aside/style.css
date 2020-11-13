@@ -1,0 +1,42 @@
+/* sidebar */
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width: 30rem;
+    transform: translate(-30rem);
+    transition: .3s;
+
+    background-color: #222222;
+    color: #ffffff;
+    padding: 1rem;
+}
+.sidebar.open{
+    transform: translate(0);
+}
+.sidebar h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.sidebar button{
+    font-size: 1rem;
+    margin: 1rem;
+    padding: .4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar ul a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.sidebar ul a li{
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+.sidebar ul a li:hover{
+    background-color: #000000;
+
+}

@@ -1,0 +1,50 @@
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #808080;
+    grid-area: header;
+}
+.menu-title{
+    display: flex;
+    align-items: center;
+}
+.menu-title a{
+    font-size: 4.4rem;
+    color: #222222;
+    text-decoration: none;
+}
+.menu-title a:hover{
+    color: #ffffff;
+}
+.menu-icon{
+    padding: 6px
+}
+.menu-icon:hover div{
+    background-color: #ffffff;
+}
+.menu-title{
+    font-size: 3rem;
+}
+.menu-icon div{
+    width: 2.4rem;
+    height: .3rem;
+    background-color: #222222;
+    margin: .5rem .4rem .5rem .4rem;
+}
+.account {
+    display: flex;
+    align-items: center;
+}
+.account a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #222222;
+    padding: 1rem 2rem 1rem 0;
+    font-weight: bold;
+}
+.account a:hover{
+    color: #ffffff;
+}

@@ -1,0 +1,48 @@
+/* interface */
+.interface{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 4rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+    height: 100vh;
+}
+
+/* main */
+.main{
+    grid-area: main;
+    padding: 5rem 2rem;
+}
+.characters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* character */
+.character{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.character .character-name{
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    width: 15rem;
+    bottom: 0;
+
+    color: #ffffff;
+    text-shadow: 0 0 .4rem #000000;
+    font-size: 1.6rem;
+}
+.character:hover .character-name{
+    color:#000000;
+    text-shadow: 0 0 .4rem #ffffff;
+    font-size: 2rem;
+}
