@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './style.css';
 
 function Header() {
@@ -15,7 +16,7 @@ function Header() {
                     <div></div>
                     <div></div>
                 </div>
-                <a href="./index.html"><h1>Dota</h1></a>
+                <Link to="/"><h1>Dota</h1></Link>
             </div>
             <div className="account">
                 <a href="./index.html">Sign Up</a>

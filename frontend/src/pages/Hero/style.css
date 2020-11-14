@@ -1,0 +1,72 @@
+.hero-page{
+  height: 100%;
+  width: 100rem;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+      'info rate';
+}
+/* info */
+.hero-info{
+  grid-area: info;
+  padding: 3rem;
+}
+.hero-info h2{
+  width: 30rem;
+  font-size: 2rem;
+}
+.hero-info img{
+  width: 30rem;
+}
+.info {
+  position: relative;
+  width: 30rem;
+}
+.hero-rating h3{
+  font-weight: lighter;
+  font-size: 2rem;
+}
+.hero-rating h4{
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+.hero-favorite{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ff3333;
+  font-size: 3rem;
+}
+/* rate */
+.hero-rate{
+  grid-area: rate;
+  padding: 3rem;
+}
+.rate{
+  width: 30rem;
+}
+.rate h3{
+  font-size: 2rem;
+}
+.rate input{
+  width: 100%;
+}
+.info-rate{
+  position: relative;
+}
+.info-rate h4{
+  font-size: 3.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.info-rate button{
+  font-size: 1.8rem;
+  padding:.4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

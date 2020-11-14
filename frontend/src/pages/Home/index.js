@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './style.css';
 import Header from '../../components/header/index'
@@ -13,7 +14,6 @@ function HomePage() {
         const fetchData = async () => {
             const { data } = await axios.get('http://localhost:5000/api/characters')
             setCharacters(data)
-            console.log(data)
         }
         fetchData();
         return () => {
@@ -30,10 +30,10 @@ function HomePage() {
                         characters.map(character => {
                             return (
                                 <li key={character.id} className="character">
-                                    <a href="../hero_page/index.html">
+                                    <Link to={`/character/${character.id}`}>
                                         <img src={ '../images/' + character.image } alt={ character.name } />
                                         <div className="character-name" >{ character.name }</div>
-                                    </a>
+                                    </Link>
                                 </li>
                             )
                         })

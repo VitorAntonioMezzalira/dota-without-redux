@@ -1,21 +1,3 @@
-/* interface */
-.interface{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1fr 4rem;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-
-    height: 100vh;
-}
-
-/* main */
-.main{
-    grid-area: main;
-    padding: 5rem 2rem;
-}
 .characters{
     display: flex;
     justify-content: center;
