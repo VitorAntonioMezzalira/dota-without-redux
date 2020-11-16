@@ -73,83 +73,22 @@ html {
 .account a:hover{
   color: #ffffff;
 }
+.account i{
+  font-size: 1.6rem;
+  padding: .4rem .5rem;
+  border-radius: 50%;
+  border: .2rem #222222 solid;
+}
+.account a:hover i{
+  border-color: #ffffff;
+}
 
 /* main */
 .main{
   grid-area: main;
   background-color: #eeeeee;
-  padding: 5rem;
 }
-.register-container{
-  width: 80rem;
-  height: 100%;
-  margin: 0 auto;
-  padding: 4rem;
-}
-.register{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 'sign-up log-in';
-}
-/* Log In | Sign Up */
-.sign-up{
-  grid-area: sign-up;
 
-  border-right: 1px solid #dddddd;
-}
-.log-in{
-  grid-area: log-in;
-}
-.sign-up h3, .log-in h3{
-  font-size: 2rem;
-  text-align: center;
-}
-.sign-up form, .log-in form{
-  width: 24rem;
-  margin: auto;
-}
-.register-fieldset, .register-fieldset{
-  border: none;
-  margin: 2.4rem 0;
-}
-.register-fieldset legend, .register-fieldset legend{
-  font-size: 1rem;
-}
-.register-input, .register-input{
-  width: 100%;
-  padding: 1.2rem;
-  margin-top: .2rem;
-  font-size: 1.2rem;
-
-  outline: none;
-  border: .1rem #cccccc solid;
-  border-radius: .6rem;
-}
-.register-input:focus, .register-input:focus{
-  border: .1rem #999999 solid;
-}
-.sign-up form button, .log-in form button{
-  width: 100%;
-  padding: 1rem;
-  font-size: 1.2rem;
-
-  background-color: #dddddd;
-  outline: none;
-  border: .1rem #cccccc solid;
-  border-radius: .6rem;
-  transition: .2s;
-  cursor: pointer;
-}
-.sign-up form button:hover, .log-in form button:hover{
-  background-color: #eeeeee;
-}
-.sign-up form button:active, .log-in form button:active{
-  border: .1rem #999999 solid;
-  background-color: #888888;
-}
 
 /* sidebar */
 .sidebar{
@@ -191,6 +130,7 @@ html {
 }
 .sidebar ul a li:hover{
   background-color: #000000;
+
 }
 
 /* footer */
