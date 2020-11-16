@@ -73,125 +73,67 @@ html {
 .account a:hover{
   color: #ffffff;
 }
-.account i{
-  font-size: 1.6rem;
-  padding: .4rem .5rem;
-  border-radius: 50%;
-  border: .2rem #222222 solid;
-}
-.account a:hover i{
-  border-color: #ffffff;
-}
 
 /* main */
 .main{
   grid-area: main;
   background-color: #eeeeee;
-
-  padding: 8rem 0 0 0;
+  padding: 5rem;
 }
-.user-container{
-  width: 100rem;
+.register{
+  width: 80rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 4rem;
+}
+/* Log In */
+.log-in h3{
+  font-size: 3.4rem;
+  text-align: center;
+}
+.log-in form{
+  width: 30rem;
   margin: auto;
 }
-.user-information{
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr 2.6fr;
-  grid-template-rows: 20rem;
-  grid-template-areas: 'left-information right-information';
-
-  border-bottom: .1rem solid #cccccc
+.register-fieldset{
+  border: none;
+  margin: 2.4rem 0;
 }
-.user-left-container{
-  grid-area: left-information;
-}
-.user-left-container img{
-  width: 100%;
-}
-.user-right-container{
-  grid-area: right-information;
-  padding: 1rem 0 0 10rem;
-}
-.user-right-container h1{
-  font-size: 2.6rem;
-}
-.user-numbers{
-  display: flex;
-  margin: 1.4rem 0
-}
-.user-numbers h4{
-  font-size: 1.4rem;
-  font-weight: lighter;
-  margin-right: 2rem;
-}
-.user-numbers h4 span{
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-.user-right-container p{
-  font-size: 1.4rem;
-}
-.user-favorites-container{
-  width: 100%;
-  padding-top: 5rem;
-}
-.user-favorites-container button{
-  width: 100%;
-  padding: 1rem 0;
-  margin: 3rem 0;
+.register-fieldset legend{
   font-size: 1.2rem;
 }
-.user-ratings-container{
+.register-input{
   width: 100%;
+  padding: 1.4rem;
+  margin-top: .2rem;
+  font-size: 1.4rem;
+
+  outline: none;
+  border: .1rem #cccccc solid;
+  border-radius: .6rem;
 }
-.user-ratings-container button{
+.register-input:focus{
+  border: .1rem #999999 solid;
+}
+.log-in form button{
   width: 100%;
-  padding: 1rem 0;
-  margin: 3rem 0;
-  font-size: 1.2rem;
-}
-.user-favorites{
-  display: flex;
-  justify-content: space-between;
-}
-.user-ratings{
-  display: flex;
-  justify-content: space-between;
-}
-/* character */
-.character{
-  position: relative;
-}
-.character:hover img{
-  filter: grayscale(50%)
-}
-.character a{
-  color: #222222;
-  text-decoration: none;
-}
-.character a img{
-  width: 18rem;
-}
-.character a h4{
-  font-weight: lighter;
+  padding: 1.4rem;
+  margin-top: 1.2rem;
   font-size: 1.4rem;
-}
-.character a h4 span{
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-.character .character-name{
-  display: flex;
-  justify-content: center;
 
-  position: absolute;
-  width: 18rem;
-  bottom: 3.4rem;
-
-  color: #ffffff;
-  text-shadow: 0 0 .4rem #000000;
-  font-size: 1.6rem;
+  background-color: #dddddd;
+  outline: none;
+  border: .1rem #cccccc solid;
+  border-radius: .6rem;
+  transition: .2s;
+  cursor: pointer;
+}
+.log-in form button:hover{
+  background-color: #eeeeee;
+}
+.log-in form button:active{
+  border: .1rem #999999 solid;
+  background-color: #888888;
 }
 
 /* sidebar */

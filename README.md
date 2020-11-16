@@ -4,20 +4,26 @@
 
 ### Pages
 [ ] Home  
-[ ] Hero  
-[ ] User  
+ - [x] list  
+ - [ ] filter
+[x] Hero  
+[ ] Profile  
+ - [ ] User informations  
  - [ ] My favorites  
  - [ ] My ratings  
 [ ] Global favorites  
 [ ] Global ratings  
-[ ] Sign Up / Log In  
+[x] Sign Up  
+[x] Log In  
 
 ### Functionalities
 [ ] Rate  
 [ ] Favorite  
-[ ] Sign In / Log In  
+[ ] Sign In  
+[ ] Log In  
+
+### API
 
 ## Backend
 
 ### Data Base
-### API
