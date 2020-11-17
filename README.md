@@ -5,7 +5,7 @@
 ### Pages
  - [ ] Home  
  - [x] list  
- - [ ] filter
+ - [ ] filter  
  - [x] Hero  
  - [ ] Profile  
  - [ ] User informations  
@@ -17,10 +17,10 @@
  - [x] Log In  
 
 ### Functionalities
-[ ] Rate  
-[ ] Favorite  
-[ ] Sign In  
-[ ] Log In  
+ - [ ] Rate  
+ - [ ] Favorite  
+ - [ ] Sign In  
+ - [ ] Log In  
 
 ### API
 

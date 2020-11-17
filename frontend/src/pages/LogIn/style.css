@@ -1,0 +1,55 @@
+.register{
+  width: 80rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 4rem;
+}
+/* Log In */
+.log-in h3{
+  font-size: 3.4rem;
+  text-align: center;
+}
+.log-in form{
+  width: 30rem;
+  margin: auto;
+}
+.register-fieldset{
+  border: none;
+  margin: 2.4rem 0;
+}
+.register-fieldset legend{
+  font-size: 1.2rem;
+}
+.register-input{
+  width: 100%;
+  padding: 1.4rem;
+  margin-top: .2rem;
+  font-size: 1.4rem;
+
+  outline: none;
+  border: .1rem #cccccc solid;
+  border-radius: .6rem;
+}
+.register-input:focus{
+  border: .1rem #999999 solid;
+}
+.log-in form button{
+  width: 100%;
+  padding: 1.4rem;
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+
+  background-color: #dddddd;
+  outline: none;
+  border: .1rem #cccccc solid;
+  border-radius: .6rem;
+  transition: .2s;
+  cursor: pointer;
+}
+.log-in form button:hover{
+  background-color: #eeeeee;
+}
+.log-in form button:active{
+  border: .1rem #999999 solid;
+  background-color: #888888;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import Aside from '../../components/Aside';
+import Header from '../../components/Header/index';
+import Footer from '../../components/Footer/index';
+import Aside from '../../components/Aside/index';
 
 import './style.css';
 import Axios from 'axios';
@@ -42,7 +42,7 @@ function HeroPage(props) {
               <div className="info">
                 <div className="hero-rating">
                   <h3>Rating: {character.rating}</h3>
-                  <h4>Number Reviews (54)</h4>
+                  <h4>Number Reviews ({character.reviews})</h4>
                 </div>
                 <div className="hero-favorite">
                   &#10084;

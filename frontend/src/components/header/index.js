@@ -19,8 +19,8 @@ function Header() {
                 <Link to="/"><h1>Dota</h1></Link>
             </div>
             <div className="account">
-                <a href="./index.html">Sign Up</a>
-                <a href="./index.html">Log In</a>
+                <Link to="/sign-up">Sign Up</Link>
+                <Link to="/log-in">Log In</Link>
                 <Link to="/profile/1">
                     <div>
                       <i class="fas fa-user"></i>
