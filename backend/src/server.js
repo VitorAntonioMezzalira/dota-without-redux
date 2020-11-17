@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import characters from './data'
+import characters from './characters';
+import users from './users';
 
 const app = express();
 
@@ -8,6 +9,16 @@ app.use(cors());
 
 app.get('/api/characters/', (req, res) => {
   res.send(characters);
+})
+
+app.get('/api/user/:id', (req, res) => {
+  const userId = req.params.id;
+  const user = users.find(user => user.id == userId);
+  if(user) {
+    res.send(user)
+  } else {
+    res.status(404).send({ message: 'User Not Found' });
+  }
 })
 
 app.get('/api/character/:id', (req, res) => {

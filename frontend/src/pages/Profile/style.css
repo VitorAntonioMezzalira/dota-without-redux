@@ -1,0 +1,116 @@
+.user-container{
+  width: 100rem;
+  margin: auto;
+}
+.user-information{
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2.6fr;
+  grid-template-rows: 20rem;
+  grid-template-areas: 'left-information right-information';
+
+  border-bottom: .1rem solid #cccccc
+}
+.user-left-container{
+  grid-area: left-information;
+}
+.user-left-container img{
+  width: 100%;
+}
+.user-right-container{
+  grid-area: right-information;
+  padding: 1rem 0 0 10rem;
+}
+.name-and-options{
+  display: flex;
+  justify-content: space-between;
+}
+.name-and-options h1{
+  font-size: 2.6rem;
+}
+.name-and-options button{
+  font-size: 1.2rem;
+  padding: .2rem 3rem;
+}
+.user-numbers{
+  display: flex;
+  margin: 1.4rem 0
+}
+.user-numbers h4{
+  font-size: 1.4rem;
+  font-weight: lighter;
+  margin-right: 2rem;
+}
+.user-numbers h4 span{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.user-right-container p{
+  font-size: 1.4rem;
+}
+.characters-grid-title{
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: .2rem;
+}
+.user-favorites-container{
+  width: 100%;
+  padding-top: 3rem;
+}
+.user-favorites-container button{
+  width: 100%;
+  padding: 1rem 0;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+}
+.user-ratings-container{
+  width: 100%;
+}
+.user-ratings-container button{
+  width: 100%;
+  padding: 1rem 0;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+}
+.user-favorites{
+  display: flex;
+  justify-content: space-between;
+}
+.user-ratings{
+  display: flex;
+  justify-content: space-between;
+}
+/* character */
+.user-character{
+  position: relative;
+}
+.user-character:hover img{
+  filter: grayscale(50%)
+}
+.user-character a{
+  color: #222222;
+  text-decoration: none;
+}
+.user-character a img{
+  width: 18rem;
+}
+.user-character a h4{
+  font-weight: lighter;
+  font-size: 1.4rem;
+}
+.user-character a h4 span{
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.user-character .user-character-name{
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  width: 18rem;
+  bottom: 3.4rem;
+
+  color: #ffffff;
+  text-shadow: 0 0 .4rem #000000;
+  font-size: 1.6rem;
+}

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './style.css';
-import Header from '../../components/header/index'
-import Footer from '../../components/footer/index'
-import Aside from '../../components/aside/index'
+import Header from '../../components/Header/index'
+import Footer from '../../components/Footer/index'
+import Aside from '../../components/Aside/index'
 
 function HomePage() {
 

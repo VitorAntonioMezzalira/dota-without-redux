@@ -21,6 +21,11 @@ function Header() {
             <div className="account">
                 <a href="./index.html">Sign Up</a>
                 <a href="./index.html">Log In</a>
+                <Link to="/profile/1">
+                    <div>
+                      <i class="fas fa-user"></i>
+                    </div>
+                  </Link>
             </div>
         </header>
     )

@@ -113,8 +113,16 @@ html {
   grid-area: right-information;
   padding: 1rem 0 0 10rem;
 }
-.user-right-container h1{
+.name-and-options{
+  display: flex;
+  justify-content: space-between;
+}
+.name-and-options h1{
   font-size: 2.6rem;
+}
+.name-and-options button{
+  font-size: 1.2rem;
+  padding: .2rem 3rem;
 }
 .user-numbers{
   display: flex;
@@ -132,9 +140,14 @@ html {
 .user-right-container p{
   font-size: 1.4rem;
 }
+.characters-grid-title{
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: .2rem;
+}
 .user-favorites-container{
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 .user-favorites-container button{
   width: 100%;

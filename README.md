@@ -3,18 +3,18 @@
 ## Frontend
 
 ### Pages
-[ ] Home  
+ - [ ] Home  
  - [x] list  
  - [ ] filter
-[x] Hero  
-[ ] Profile  
+ - [x] Hero  
+ - [ ] Profile  
  - [ ] User informations  
  - [ ] My favorites  
  - [ ] My ratings  
-[ ] Global favorites  
-[ ] Global ratings  
-[x] Sign Up  
-[x] Log In  
+ - [ ] Global favorites  
+ - [ ] Global ratings  
+ - [x] Sign Up  
+ - [x] Log In  
 
 ### Functionalities
 [ ] Rate  

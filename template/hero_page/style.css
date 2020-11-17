@@ -73,6 +73,15 @@ html {
 .account a:hover{
     color: #ffffff;
 }
+.account i{
+    font-size: 1.6rem;
+    padding: .4rem .5rem;
+    border-radius: 50%;
+    border: .2rem #222222 solid;
+  }
+  .account a:hover i{
+    border-color: #ffffff;
+  }
 
 /* main */
 .main{

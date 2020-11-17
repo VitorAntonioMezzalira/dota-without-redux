@@ -78,10 +78,10 @@ html {
     padding: .4rem .5rem;
     border-radius: 50%;
     border: .2rem #222222 solid;
-  }
-  .account a:hover i{
+}
+.account a:hover i{
     border-color: #ffffff;
-  }
+}
 
 /* sidebar */
 .sidebar{
