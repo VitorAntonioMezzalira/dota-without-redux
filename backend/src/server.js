@@ -14,11 +14,18 @@ app.get('/api/characters/', (req, res) => {
 app.get('/api/user/:id', (req, res) => {
   const userId = req.params.id;
   const user = users.find(user => user.id == userId);
+  
+  user.favorites.characters.splice(0, user.favorites.characters.length) // limpa a array dos personagens favoritos
+  user.favorites.ids.forEach(favoriteId => {
+    user.favorites.characters.push(characters.find(character => character.id == favoriteId))  // encontra os personagens favoritos do usuário
+  });
+
   if(user) {
     res.send(user)
   } else {
     res.status(404).send({ message: 'User Not Found' });
   }
+
 })
 
 app.get('/api/character/:id', (req, res) => {
