@@ -65,11 +65,11 @@ function Profile(props) {
         <h2 className="characters-grid-title">My ratings</h2>
         <div className="user-ratings">
 
-          <ProfileCharacter />
-          <ProfileCharacter />
-          <ProfileCharacter />
-          <ProfileCharacter />
-          <ProfileCharacter />
+          <ProfileCharacter name="Abaddon" />
+          <ProfileCharacter name="Alchemist" />
+          <ProfileCharacter name="A" />
+          <ProfileCharacter name="Abaddon" />
+          <ProfileCharacter name="Abaddon" />
 
         </div>
         <button>Show more ratings</button>
