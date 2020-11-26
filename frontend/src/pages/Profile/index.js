@@ -38,7 +38,7 @@ function Profile(props) {
           <p>{user.bio}</p>
         </div>
       </div>
-      <div className="user-favorites-container">
+      <div className="heroes-list user-favorites-container">
         <h2 className="characters-grid-title">My favorites</h2>
         <div className="user-favorites">
           {console.log(user)}
@@ -59,9 +59,9 @@ function Profile(props) {
           }
 
         </div>
-        <button>Show more favorites</button>
+        <button class="regular-button">Show more favorites</button>
       </div>
-      <div className="user-ratings-container">
+      <div className="heroes-list  user-ratings-container">
         <h2 className="characters-grid-title">My ratings</h2>
         <div className="user-ratings">
 
@@ -72,7 +72,7 @@ function Profile(props) {
           <ProfileCharacter name="Abaddon" />
 
         </div>
-        <button>Show more ratings</button>
+        <button class="regular-button">Show more ratings</button>
       </div>
     </div>
   )
